@@ -1,0 +1,171 @@
+html,
+body {
+	height: 100%;
+	font-family: "Ariston", sans-serif;
+	font-size: 21px;
+	color: #fff;
+	line-height: 26px;
+	font-weight: 600;
+
+}
+
+.container {
+	max-width: 1210px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.juctify-between {
+	justify-content: space-between;
+}
+
+.align-center {
+	align-items: center;
+}
+
+body {
+	background: rgba(0, 0, 0, 0.39) url("../img/bg.jpg") no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	box-shadow: inset 0px 40px 150px 90px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+	padding: 40px 0;
+	border-bottom: 2px solid #fff;
+
+	&__nav {
+		max-width: 610px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		font-family: "Montserrat", sans-serif;
+	}
+}
+
+.invite {
+	max-width: 852px;
+	width: 100%;
+	margin: 40px auto;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 0px 70px 14px rgba(0, 0, 0, 0.45);
+	border-radius: 30px;
+	position: relative;
+
+	&__images {
+		position: absolute;
+	}
+
+	&__lenta {
+		left: -12px;
+		top: -40px;
+	}
+
+	&__fam {
+		top: 160px;
+		left: 0;
+	}
+
+	&__img-block {
+		position: relative;
+		width: 763px;
+		height: 709px;
+		margin-left: 62px;
+
+		& img {
+			position: absolute;
+		}
+	}
+
+	&__title {
+		font-family: "Pompadur", sans-serif;
+		text-align: center;
+		padding-top: 100px;
+		color: #000000;
+		font-size: 34px;
+		line-height: 45px;
+		margin-left: -25px;
+	}
+
+	&__text {
+		color: #000;
+		display: block;
+		text-align: center;
+		max-width: 340px;
+		margin: 30px auto 0;
+	}
+
+	&__names {
+		display: block;
+		max-width: 212px;
+		width: 100%;
+		margin: 28px auto 0;
+		font-size: 55px;
+		line-height: 67px;
+		text-align: center;
+		color: #63007C;
+		border: 2px solid #63007C;
+	}
+}
+
+@media (max-width: 841.98px) {
+	.header {
+		padding: 15px 0;
+		flex-direction: column;
+
+		&__nav {
+			flex-direction: column;
+		}
+	}
+
+	.invite {
+		&__img-block {
+			margin-left: 0;
+			max-width: 100%;
+
+			& img {
+				max-width: 100%;
+			}
+		}
+
+		&__text {
+			position: relative;
+			z-index: 2;
+		}
+	}
+}
+
+@media (max-width: 640.98px) {
+	.invite__venok {
+		display: none;
+	}
+
+	.invite__lenta {
+		width: 150px;
+		height: 171px;
+		left: -8px;
+		top: -24px;
+	}
+}
+
+@media (max-width: 580.98px) {
+	.invite__fam {
+		display: none;
+	}
+	.invite__img-block {
+		height: unset;
+	}
+	.invite {
+		height: unset;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.invite__title {
+		margin-left: 0;
+	}
+
+}
